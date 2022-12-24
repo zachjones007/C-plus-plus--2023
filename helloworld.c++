@@ -9,9 +9,8 @@ int main() {
     double b = 2.0;
     double c = a + b;
 
-
-    
-    std::cin >> x; // read from stdin
+    std::cout << b ;
+    std::cout << x ; 
     std::cout << "Hello World!" << std::endl;
     return 0;
 
