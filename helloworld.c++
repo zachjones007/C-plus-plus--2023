@@ -18,13 +18,18 @@ int main() {
     cout << "Enter your age:";
     cin >> age;
     cout << "\nYour age is: " << age;
- 
-    return 0;
 
 
-    std::cout << b ;
-    std::cout << x ; 
-    std::cout << "Hello World!" << std::endl;
+    
+    cout << x ; 
+    cout << "Hello World!" << endl;
     return 0;
+    int yes() {
+    
+        cout << "Enter your age1:";
+        cin >> hello;
+        cout << "\nYour age is: " << hello;
+    }
+
 
 }
