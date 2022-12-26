@@ -5,8 +5,6 @@
 //  The theater has 300 seats in section A, 500 seats in section B,
 //  and 200 seats in section C The theater has 300 seats in section A, 
 // 500 seats in section B, and 200 seats in section C
-
-
 #include <iostream>
 using namespace std;
 int main() {
@@ -21,26 +19,32 @@ priceC = 10;
 a = 300;
 b = 200;
 c = 100;
-
-
-
 cout << "room 1 seating";
 cin >> A ;
 cout << "room 2 seating";
 cin >> B ;
 cout << "room 3 seating";
 cin >> C ;
-
-
-float remaindera =a - A;
-float remainderb = b - B;
-float remainderc = c - C;
+int remaindera =a - A;
+int remainderb = b - B;
+int remainderc = c - C;
+if (remaindera >= a) {
+cout << "room 1 is full" << std::endl;
+}
 float profitA = A*priceA;
 float profitB = B*priceB;
 float profitC = C*priceC;
 float profit = (profitA+profitB+profitC);
-
-
 std::cout << "room 1 : " << remaindera << " room 2: " << remainderb << " room 3: " << remainderc << std::endl;
 std::cout << "profit: " << profit << std::endl;
+  // checks if there are spots left to sit
+  if (remaindera > 0) {
+    cout << "you have : " << remaindera << " seats left in section A"<<endl;
+  }
+  if (remainderb > 0) {
+    cout << "you have : " << remainderb << " seats left in section B"<<endl;
+  }
+  if (remainderc > 0) {
+    cout << "you have : " << remainderc << " seats left in section C"<<endl;
+  } 
 }
