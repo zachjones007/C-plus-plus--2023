@@ -5,6 +5,7 @@
 //  The theater has 300 seats in section A, 500 seats in section B,
 //  and 200 seats in section C The theater has 300 seats in section A, 
 // 500 seats in section B, and 200 seats in section C
+// will indicate the amount of seats left to be purchased in each section 
 #include <iostream>
 using namespace std;
 int main() {
