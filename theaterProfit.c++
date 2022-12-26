@@ -13,9 +13,14 @@ int main() {
 
 float a, b ,c;
 float A, B, C;
+float priceA,priceB,priceC
+priceA = 20;
+priceB = 15;
+priceC = 10;
 a = 300;
 b = 200;
 c = 100;
+
 
 
 
@@ -33,6 +38,7 @@ float remainderb = b - B;
 float remainderc = c - C;
 float profit = (remaindera + remainderb + remainderc)-(500);
 
-std::cout << "room 1 : " << remaindera << " room 2: " << remainderb << " room 3: " << remainderc << std::endl; 
+std::cout << "room 1 : " << remaindera << " room 2: " << remainderb << " room 3: " << remainderc << std::endl;
+
 std::cout << "profit: " << profit << std::endl;
 }
