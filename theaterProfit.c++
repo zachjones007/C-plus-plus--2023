@@ -10,10 +10,10 @@
 #include <iostream>
 using namespace std;
 int main() {
-
+cout << "section 1: 20$, section 2: 15$, section 3: 10$";
 float a, b ,c;
 float A, B, C;
-float priceA,priceB,priceC
+float priceA,priceB,priceC;
 priceA = 20;
 priceB = 15;
 priceC = 10;
@@ -23,8 +23,6 @@ c = 100;
 
 
 
-
-// It is safe to assume a, b, c will be in float, float, char form?
 cout << "room 1 seating";
 cin >> A ;
 cout << "room 2 seating";
@@ -36,9 +34,14 @@ cin >> C ;
 float remaindera =a - A;
 float remainderb = b - B;
 float remainderc = c - C;
-float profit = (remaindera + remainderb + remainderc)-(500);
+float profitA = A*priceA;
+float profitB = B*priceB;
+float profitC = C*priceC
+float profit = (profitA+profitB+profitC);
+
 
 std::cout << "room 1 : " << remaindera << " room 2: " << remainderb << " room 3: " << remainderc << std::endl;
+ 
 
 std::cout << "profit: " << profit << std::endl;
 }
