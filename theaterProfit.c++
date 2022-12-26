@@ -10,7 +10,8 @@
 #include <iostream>
 using namespace std;
 int main() {
-cout << "section 1: 20$, section 2: 15$, section 3: 10$";
+cout << "section 1: 20$, section 2: 15$, section 3: 10$"<< std::endl;
+cout << "section 1: 300 seats, section 2: 500 seats, section 3: 200 seats"<< std::endl;
 float a, b ,c;
 float A, B, C;
 float priceA,priceB,priceC;
@@ -36,12 +37,10 @@ float remainderb = b - B;
 float remainderc = c - C;
 float profitA = A*priceA;
 float profitB = B*priceB;
-float profitC = C*priceC
+float profitC = C*priceC;
 float profit = (profitA+profitB+profitC);
 
 
 std::cout << "room 1 : " << remaindera << " room 2: " << remainderb << " room 3: " << remainderc << std::endl;
- 
-
 std::cout << "profit: " << profit << std::endl;
 }
