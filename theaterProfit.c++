@@ -1,4 +1,3 @@
-
 //The program should validate the numbers that are entered for each section
 //A seats cost $20 each, section B seats cost $15 each, and section C seats cost $10 each.
 // A seats cost $20 each, section B seats cost $15 each, and section C seats cost $10 each.
@@ -29,16 +28,17 @@ cin >> C ;
 int remaindera =a - A;
 int remainderb = b - B;
 int remainderc = c - C;
-if (remaindera >= a) {
-cout << "room 1 is full" << std::endl;
-}
 float profitA = A*priceA;
 float profitB = B*priceB;
 float profitC = C*priceC;
 float profit = (profitA+profitB+profitC);
+float Z = A+B+C;
 std::cout << "room 1 : " << remaindera << " room 2: " << remainderb << " room 3: " << remainderc << std::endl;
 std::cout << "profit: " << profit << std::endl;
   // checks if there are spots left to sit
+  if (Z < 600) {
+    cout << "total seets taken:" << Z << std::endl;
+  }
   if (remaindera > 0) {
     cout << "you have : " << remaindera << " seats left in section A"<<endl;
   }
