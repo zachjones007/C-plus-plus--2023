@@ -48,18 +48,4 @@ std::cout << "profit: " << profit << std::endl;
   if (remainderc > 0) {
     cout << "you have : " << remainderc << " seats left in section C"<<endl;
   } 
-cout << "Guess a number between 0 - 10 : "<<endl;
-//generate a random number
-srand((unsigned int)time(NULL));
-int num =   (rand() % 9);
-cout << num << endl;
-int guess;
-cin >> guess;
-
-if (guess == num) {
-cout << "you guessed the number"<<endl;
-
-
-
-  }
 }
