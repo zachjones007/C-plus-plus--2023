@@ -24,12 +24,15 @@ int main() {
 
         int input;
         if(std::cin >> input) {
-            if(input > 0) {
-                sum = sum + input;
+            if(input > n) {
+                sum = sum + input;     
             }
             std::cout << sum << std::endl;
-        } else
-            break; // user failed to enter a number
+        } else if ( sum >= input ){
+
+        }
+        std::cout << input << std::endl;
+            
     }
 }
     
